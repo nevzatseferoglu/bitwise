@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-unsigned int bitcount( unsigned x ) {
+unsigned bitcount( unsigned x ) {
     
     unsigned i, count;
 
-    count = 0;
+    count = 0U;
     for( i = ~(~0U >> 1); i != 0 ; i >>= 1 )
         if( x & i )
             ++count;
